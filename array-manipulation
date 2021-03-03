@@ -8,6 +8,23 @@ import sys
 
 # Complete the arrayManipulation function below.
 def arrayManipulation(n, queries):
+    #initialize array with zeroes
+    # [0,0,0 ... x n times] we need 1D array because the function updates the same array
+    
+    array = [0] * (n+2) #(n+2) because we start from index1 and update 1 index past n
+    
+    for a, b, k in queries:
+        array[a]+=k
+        array[b+1]-=k
+               
+    maxnumber = temp = 0
+    
+    for value in array:
+        temp+=value
+        #after iteration through each array maxnumber saves the maximum number
+        maxnumber=max(maxnumber, temp) 
+    
+    return maxnumber
 
 
 if __name__ == '__main__':
