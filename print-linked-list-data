@@ -11,8 +11,13 @@
 #
 #
 def printLinkedList(head):
-    
 
+    temp = head  #we need this to create a temporary pointer 
+    
+    while temp!=None:
+        print(temp.data)   #print data that belongs to this head
+        temp=temp.next       #go to the next head until the head == None  
+    
 if __name__ == '__main__':
     llist_count = int(input())
 
