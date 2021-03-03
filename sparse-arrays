@@ -9,11 +9,11 @@ from collections import Counter
 
 # Complete the matchingStrings function below.
 def matchingStrings(strings, queries):
-    new_dict = Counter(strings)
+    new_dict = Counter(strings)         #new dict with key: strings, value: count 
     result = []
-    for i in queries:
-        result.append(new_dict[i]) 
-    return result
+    for i in queries:                #for item in queries check if 
+        result.append(new_dict[i])            #the item is in the existing dictionary, and what is its count 
+    return result                                      #return the list of the counts 
         
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
