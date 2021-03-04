@@ -1,4 +1,4 @@
-Practice / Data Structures / Linked Lists / Insert a Node at the Tail of a Linked List
+# Practice / Data Structures / Linked Lists / Insert a Node at the Tail of a Linked List
 
 import math
 import os
