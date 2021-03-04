@@ -1,4 +1,4 @@
-Practice / Tutorials / 30 Days of Code / Day 17: More Exceptions
+# Practice / Tutorials / 30 Days of Code / Day 17: More Exceptions
 
 class Calculator:
     def power(self, n, p):
