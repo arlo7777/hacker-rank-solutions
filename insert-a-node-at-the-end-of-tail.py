@@ -46,7 +46,7 @@ def insertNodeAtTail(head, data):
         while temp.next != None:
             temp = temp.next  #the last element in the list = temp.next (the empty cell)
         
-        temp.next = node   #now the last element of the list == the node passed in at                               the beginning of the function  
+        temp.next = node   #now the last element of the list == the node passed in at the beginning of the function  
     return head #because we need to print an element of the list after each iteration 
     
     temp = head
