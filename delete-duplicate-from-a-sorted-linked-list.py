@@ -49,7 +49,7 @@ def print_singly_linked_list(node, sep, fptr):
 #
 #
 def removeDuplicates(head):
-    temp = head
+    temp = head #create a temp pointer
     while temp.next!=None:
         if temp.data==temp.next.data: #check for the condition 
             temp.next = temp.next.next #delete the next node
